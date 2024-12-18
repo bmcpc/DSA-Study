@@ -7,9 +7,12 @@
 
 '''
 for each node, we need to swap the left and right nodes
-recursively traverse, and then swap
-
 base case: when node is null (leaf node), we return 
+
+check if root is null
+swap the left and right
+recursively call invertTree on right and left
+return root
 '''
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
